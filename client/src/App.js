@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div>
-      <SavedList onClick={(arb) => { setArb(!arb) }} list={savedList} />
+      <SavedList list={savedList} />
       {/* <Route exact path="/" component={MovieList}></Route> */}
       <Route exact path="/" render={(props) => <MovieList {...props} addToSavedList={addToSavedList} />}></Route>
       {/* <Route path="/movies/:id" component={Movie} /> */}
