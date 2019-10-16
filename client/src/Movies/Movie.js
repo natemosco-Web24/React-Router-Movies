@@ -21,7 +21,7 @@ const Movie = (props) => {
         console.error("this is the axios error", error);
       });
 
-  }, []);
+  }, [props.match.params.id]);
 
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
